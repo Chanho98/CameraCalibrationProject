@@ -3,7 +3,7 @@ import cv2
 import glob
 
 
-# 종료기준 설정
+# 종료기준 설정하기
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
 height = 6

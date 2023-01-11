@@ -1,9 +1,15 @@
 # CameraCalibrationProject
 카메라 센서의 오차를 바로잡는 Camera Calibration 실습
 
-## 1. Camera Calibration 이란?
+## 1.1. Camera Calibration 이란?
 카메라로 촬영할 시 이미지는 렌즈, 이미지와 렌즈 사이의 거리, 카메라가 이루는 각도등의 요인에 의해서 영향을 받는다. 카메라 캘리브레이션은 
 3차원을 2차원 이미지로 변환하는 과정에서 발생하는, 왜곡을 줄이고 개선하는 과정이다.
+## 1.2. 렌즈계 왜곡 종류
+렌즈 왜곡에는 크게 방사왜곡과 접선왜곡이 있다. 이중  방사왜곡은 볼록렌즈의 굴절률에 의한 것으로 렌즈 중심에서 부터의  거리에 의해 결정된다. 
+<p align="center"><img src="https://user-images.githubusercontent.com/78125194/211782685-c1c3f335-af44-48a8-b706-73a82ceea2f0.png" width="600" height="400"/></p>
+접선 왜곡은 카메라 렌즈와 이미지 센서의 수평이 맞지 않거나  또는 렌즈 자체의 Centering이 잘 맞지 않아서 생각하는  왜곡으로 타원형 형태의 왜곡 분포가 나타난다.
+<p align="center"><img src="https://user-images.githubusercontent.com/78125194/211782959-8195ec0e-eb93-4b44-98d0-4921af574ca9.png" width="600" height="400"/></p>
+
 ****
 ## 2.1. Edge Detecting
 체스판에서 코너를 찾고 코너 좌표를 반환하는 findChessboardCorners 함수 이용
